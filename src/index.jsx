@@ -11,8 +11,6 @@ import App from './main/app'
 import AuthOrApp from './main/authOrApp'
 import reducers from './main/reducers'
 
-import registerServiceWorker from './registerServiceWorker'
-
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 const store = applyMiddleware(multi,thunk,promise)(createStore)(reducers, devTools)
 
@@ -21,5 +19,3 @@ ReactDOM.render(
      <AuthOrApp />
     </Provider>
 , document.getElementById('app'))
-
-registerServiceWorker()
