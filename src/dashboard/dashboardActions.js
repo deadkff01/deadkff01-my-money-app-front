@@ -1,5 +1,7 @@
 import axios from 'axios'
-const BASE_URL = 'http://localhost:666/api'
+import consts from '../consts'
+
+const BASE_URL = consts.API_URL
 
 /** using async function
  * export async function getSummary() {
